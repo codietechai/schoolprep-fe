@@ -72,7 +72,7 @@ export const EditPermissionForm = () => {
       },
     });
 
-  const onSubmit = (data: PermissionFormValues) => {
+  const onSubmit:any = (data: PermissionFormValues) => {
     // The active field is now a boolean, no need for conversion
     editPermission({
       id: id,

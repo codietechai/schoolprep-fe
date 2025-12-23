@@ -145,7 +145,7 @@ export const EditUserForm = () => {
     },
   });
 
-  const onSubmit = (data: TEditUser) => {
+  const onSubmit:any = (data: TEditUser) => {
     const dataURL = images?.[0]?.dataURL ? images?.[0]?.dataURL : null;
 
     const phoneCode = `+${countryCode}`;

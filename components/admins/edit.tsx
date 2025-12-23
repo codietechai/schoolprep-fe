@@ -90,7 +90,7 @@ export const EditForm = () => {
     },
   );
 
-  const onSubmit = (data: TEditAdmin) => {
+  const onSubmit:any = (data: any) => {
     const phoneCode = `+${countryCode}`;
     const phoneNumber = data.contact_number.replace(phoneCode, '');
     let payload = {

@@ -47,7 +47,7 @@ const ResetPassForm = () => {
     onError: err => {},
   });
 
-  const onSubmit = (data: TReset) => {
+  const onSubmit:any = (data: TReset) => {
     // Add the token to the payload
     const payload = {
       ...data,

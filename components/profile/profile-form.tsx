@@ -59,7 +59,7 @@ export const ProfileForm = () => {
     },
   );
 
-  const onSubmit = (data: TEditAdminProfile) => {
+  const onSubmit:any = (data: TEditAdminProfile) => {
     const phoneCode = `+${countryCode}`;
     const phoneNumber = data.contact_number.replace(phoneCode, '');
     let payload = {
