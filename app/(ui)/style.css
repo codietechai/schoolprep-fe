@@ -1,0 +1,71 @@
+.nav-item {
+  @apply leading-5 text-[#253650] sm:text-[17px];
+}
+
+.main-head {
+  @apply text-[28px] font-bold leading-[40px] -tracking-[1.28px] text-black sm:text-[40px] sm:leading-[50px] lg:text-[70px] lg:leading-[88px];
+}
+
+.heading {
+  @apply text-[24px] font-bold leading-[30px] sm:text-[28px] sm:leading-[40px] md:text-[38px] md:leading-[50px];
+}
+
+.sub-head {
+  @apply text-[17px] font-[300] leading-[24px] sm:text-xl md:text-[28px] md:leading-[38px];
+}
+
+.primary-text {
+  @apply text-center text-[28px] font-[300] leading-[40px] text-black sm:text-[40px] sm:leading-[60px] lg:text-left lg:text-[64px] lg:leading-[87.17px];
+}
+
+.secondary-text {
+  @apply text-base sm:text-[18px] sm:leading-[22px] lg:text-[22px] lg:leading-[32px];
+}
+
+.tertiary-text {
+  @apply text-lg md:text-[24px] md:leading-[36px];
+}
+
+.responsive {
+  @apply mx-4 md:mx-8 xl:mx-auto;
+}
+
+.res-padding {
+  @apply py-[60px] lg:py-[120px];
+}
+
+@media (max-width: 1024px) {
+  .accordian {
+    padding-left: 0px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .accordian {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+.white-boder-badge {
+  border-color: white !important;
+  border-width: 1px !important;
+}
+
+.collapse-container {
+  border-radius: 0px !important;
+}
+
+.collapse-container div {
+  padding-bottom: 10px !important;
+}
+
+.footer-gradient {
+  background: linear-gradient(
+    90deg,
+    #f8f8f8 0%,
+    #e6e6e7 15%,
+    #e6e6e7 87%,
+    #f8f8f8 100%
+  );
+}

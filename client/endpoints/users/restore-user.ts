@@ -1,0 +1,14 @@
+import { backendClient } from '@/client/backendClient';
+import { useContainerLoader } from '@/hooks';
+
+export const restoreUserRequest = async (ids: number[]) => {
+  useContainerLoader.getState().setShowLoader(true);
+  try {
+    const response = await backendClient.post(`/admin/users/restore`, { ids });
+    return response;
+  } catch (error) {
+    throw error;
+  } finally {
+    useContainerLoader.getState().setShowLoader(false);
+  }
+};
